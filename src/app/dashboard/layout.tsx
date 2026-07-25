@@ -5,7 +5,6 @@ import { UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Sparkles,
   LayoutDashboard,
   FileText,
   Map,
@@ -91,21 +90,17 @@ export default function DashboardLayout({
           }}
           title={sidebarOpen ? "Collapse sidebar" : "Expand sidebar"}
         >
-          <div
+          <img
+            src="/orbit-logo.png"
+            alt="Orbit AI"
             style={{
               width: "32px",
               height: "32px",
               minWidth: "32px",
-              borderRadius: "8px",
-              background: "var(--gradient-primary)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              objectFit: "contain",
               transition: "transform var(--transition-fast)",
             }}
-          >
-            <Sparkles size={18} color="white" />
-          </div>
+          />
           {sidebarOpen && (
             <span
               style={{
