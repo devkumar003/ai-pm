@@ -378,20 +378,16 @@ export default function LandingPage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-          <div
+          <img
+            src="/orbit-logo.png"
+            alt="Orbit AI"
             className="animate-pulse-glow"
             style={{
               width: "38px",
               height: "38px",
-              borderRadius: "10px",
-              background: "var(--gradient-primary)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              objectFit: "contain",
             }}
-          >
-            <Sparkles size={20} color="#09090b" />
-          </div>
+          />
           <span
             style={{ fontSize: "20px", fontWeight: 700, color: "var(--text-primary)" }}
           >
@@ -819,8 +815,8 @@ export default function LandingPage() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <Sparkles size={14} color="var(--primary)" />
-          <span style={{ fontWeight: 600, color: "var(--text-primary)" }}>AI Product Manager</span>
+          <img src="/orbit-logo.png" alt="Orbit AI" style={{ width: "18px", height: "18px", objectFit: "contain" }} />
+          <span style={{ fontWeight: 600, color: "var(--text-primary)" }}>Orbit AI</span>
         </div>
 
       </footer>
